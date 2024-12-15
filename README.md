@@ -5,12 +5,23 @@
 
 ## 📰 News
 
-* **[2024.06.07]**  🔥🔥 Our data pipeline are available now !
+* **[2024.06.07]**  🔥🔥 Our DCE pipeline is launching soon—stay tuned !
 
-* **[2024.06.07]**  🔥🤗 Our DCE-1M datasets is released, please check out and download in [DCE-1M](https://huggingface.co/datasets/syp115/DCE-1M)!
+* **[2024.06.07]**  🔥🤗 Our DCE-1M datasets is released, please check out and download in [DCE-1M](https://huggingface.co/datasets/syp115/DCE-1M) !
 
 
 ## 😮 Highlights
+
+<strong><em>DCE</em></strong> leverage visual specialists to replicate various <strong><em>human visual capabilities</em></strong>, and subsequently employ large language models (LLMs) to simulate the <strong><em>human cognitive process</em></strong>. This combined approach enables us to generate high-quality image captions by closely mimicking the way humans perceive and interpret visual information.
+
+---
+
+1. **Open-Source Accessibility**: The DCE pipeline is built entirely using open-source models, providing an accessible, cost-effective solution for generating high-quality image captions without reliance on proprietary technologies.
+
+2. **Customizable and Flexible Design**: The pipeline supports a DIY approach, allowing users to integrate and combine different visual specialist models tailored to their specific needs. This flexibility empowers users to generate customized captions enriched with targeted visual information.
+
+## Abstract
+
 Training <strong><em>Large Multimodality Models (LMMs)s</em></strong> relies on descriptive image caption
 that connects image
 and language.
@@ -37,7 +48,7 @@ as well as reasoning that benefits from more accurate visual understanding. We w
 so that other visual specialists are easily combined into the pipeline.
 
 ---
-<strong><em>DCE</em></strong> leverage visual specialists to replicate various <strong><em>human visual capabilities</em></strong>, and subsequently employ large language models (LLMs) to simulate the <strong><em>human cognitive process</em></strong>. This combined approach enables us to generate high-quality image captions by closely mimicking the way humans perceive and interpret visual information.
+
 
 <!-- Model Image-->
 <section class="hero teaser">
