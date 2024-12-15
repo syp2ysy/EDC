@@ -11,16 +11,40 @@
 
 
 ## 😮 Highlights
-The <strong><em>visual perception capabilities</em></strong> of MLLMs directly impact their performance. It is well-known that the main factors influencing MLLMs' visual perception are <strong><em>data</em></strong> and <strong><em>structure</em></strong>.
-<strong><em>Arcana</em></strong> aims to enhance the visual perception capabilities of MLLMs by addressing both of these aspects.
-- On the <strong><em>data</em></strong> side, there is a scarcity of open-source data, and the available multimodal datasets contain limited visual components, preventing MLLMs from gaining sufficient visual perception capabilities from these sources.  To this end, we have developed a data engine to annotate multimodal data that ensures a diversity of visual factors.
-- On the <strong><em>structural</em></strong> side, the language-driven decoder couples visual and language modalities within the same space, disregarding their unique characteristics and potentially causing information confusion or blurring. Furthermore, the frozen visual encoder cannot provide robust visual features, and directly fine-tuning it with a small dataset can affect its generalization capabilities. Toward this end, Arcana introduces MM-LoRA, which constructs a multimodal decoder to preserve the unique characteristics of different modalities. We also propose a Query Ladder adapter (QLadder) for the visual encoder, which retains the pre-trained image encoder's capabilities while introducing a small number of visual tokens to significantly enhance the model's ability to learn and represent visual information.
+Training <strong><em>Large Multimodality Models (LMMs)s</em></strong> relies on descriptive image caption
+that connects image
+and language.
+Existing methods either
+distill the caption
+from the LMM models
+or construct the captions 
+from the internet images or by human.
+We propose to leverage off-the-shelf visual specialists,
+which were trained from annotated images initially not for image captioning,
+for enhancing the image caption.
+
+
+
+Our approach, named <strong><em>DCE</em></strong>, explores object low-level and fine-grained attributes
+(e.g., depth, emotion and fine-grained categories)
+and object relations 
+(e.g., relative location and human-object-interaction (HOI)),
+and combine the attributes into the descriptive caption.
+Experiments demonstrate that
+such visual specialists are able to improve the performance
+for visual understanding tasks
+as well as reasoning that benefits from more accurate visual understanding. We will release the source code and the pipeline
+so that other visual specialists are easily combined into the pipeline.
+
+---
+<strong><em>DCE</em></strong> leverage visual specialists to replicate various <strong><em>human visual capabilities</em></strong>, and subsequently employ large language models (LLMs) to simulate the <strong><em>human cognitive process</em></strong>. This combined approach enables us to generate high-quality image captions by closely mimicking the way humans perceive and interpret visual information.
+
 <!-- Model Image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/framework.png" alt="MY ALT TEXT"/>
-      <img src="assets/mmlora.png" alt="MY ALT TEXT"/>
+      <img src="assets/pipeline.png" alt="MY ALT TEXT"/>
+      <img src="assets/attributes_table.png" alt="MY ALT TEXT"/>
     </div>
   </div>
 </section>
