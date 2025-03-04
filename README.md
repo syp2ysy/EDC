@@ -1,5 +1,5 @@
 
-<h2 align="center"> <a href="https://arxiv.org/pdf/2412.14233">Descriptive Caption Enhancement with Visual Specialists for Multimodal Perception </a></h2>
+<h2 align="center"> <a href="https://arxiv.org/pdf/2412.14233">Enhancing Descriptive Captions with Visual Specialists for Multimodal Perception </a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub.  </h2>
 
 
