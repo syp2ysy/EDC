@@ -7,7 +7,7 @@
 
 * **[2024.12.15]**  🔥🔥 Our DCE pipeline is launching soon—stay tuned !
 
-* **[2024.12.15]**  🔥🤗 Our DCE-1M datasets is released, please check out and download in [DCE-1M](https://huggingface.co/datasets/syp115/DCE-1M) !
+* **[2024.12.15]**  🔥🤗 Our DCE-1M datasets is released, please check out and download in [EDC-1M](https://huggingface.co/datasets/syp115/DCE-1M) !
 
 
 ## 😮 Highlights
